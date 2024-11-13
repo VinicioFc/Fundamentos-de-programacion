@@ -1,0 +1,36 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float A ;
+    cout << " ¿QUIERE CAMBIAR UNA LLANTA  ?" << endl;
+    cout << " ESCRIBE  1 PARA SI Y 0 PARA NO  ?" << endl;
+    cout << "0" <<endl;
+    cout << "1" <<endl<<endl;
+    cin  >> A   ;
+    if (A == 1)
+    {
+    cout << " 1.  Busca un lugar seguro y oríllate "                << endl;
+    cout << " 2.  Coloca los triángulos de emergencia "             << endl;
+    cout << " 3.  Ubica el neumático que vas a cambiar "            << endl;
+    cout << " 4.  Afloja cada uno de los birlos"                    << endl;
+    cout << " 5.  Coloca el gato hidráulico debajo del vehículo "   << endl;
+    cout << " 6.  Levanta tu vehículo"                              << endl;
+    cout << " 7.  Retira la llanta quitando los birlos"             << endl;
+    cout << " 8.  Coloca la llanta de refacción "                   << endl;
+    cout << " 9.  Baja tu vehículo  "                               << endl;
+    cout << " 10  AJUSTA LOS BIRLOS "                               << endl;
+    cout << " 11. Guarda la llanta que acabas de cambiar y tus herramientas en el compartimento de la cajuela "                   << endl;
+    cout << " 12. Guarda la llanta que acabas de cambiar y tus herramientas en el compartimento de la cajuela "                   << endl;
+    }
+    else if (A == 0)
+    {
+    cout << "NO SE REALIZA EL CAMBIO DE LA LLANTA "            << endl;
+    }
+    else {
+    cout << "NINGUNA RESPUESTA SELECCIONADA"                   << endl;
+    }
+    return 0;
+}
