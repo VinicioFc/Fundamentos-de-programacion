@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float n,d,s;
+    n=0;
+    if (n=0,s=n+1,d=s+1)
+    {
+    cout <<" "   << n <<endl;
+    }
+    cout << " "  << s <<endl;
+    cout <<" "   << d <<endl;
+    return 0;
+}
