@@ -1,0 +1,38 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float R1,R2,R3,RT;
+    cout << "INGRESE EL VALOR DE LA R1 " << endl;
+    cin  >> R1;
+    if (R1 >0)                                                                                                                                                                                                                                                                                                                                                                                     > 0 )
+    {
+    cout << "INGRESE EL VALOR DE LA R2 " << endl;
+    cin  >> R2;
+    if ( R2 > 0 )
+    {
+    cout << "INGRESE EL VALOR DE LA R3 " << endl;
+    cin  >> R3;
+    if ( R3 > 0 )
+    {
+    RT=1/((1/R1)+(1/R2)+(1/R3));
+    cout << "La resistencia total es " << RT<< endl;
+    }
+    else
+    {
+    cout << "INGRESE EL VALOR DE LA R3 > 0 " << endl;
+    }
+    }
+    else
+    {
+    cout << "INGRESE EL VALOR DE LA R2 > 0 " << endl;
+    }
+    }
+    else
+    {
+   cout << "INGRESE EL VALOR DE LA R1 > 0 " << endl;
+    }
+    return 0;
+}
