@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float pa,pb,pc,v,r,i,I;
+    r=10;
+    cout << "Indique el valor de la voltaje " << endl;
+    cin >> v;
+    cout << "Indique el valor de la intensidad " << endl;
+    cin >> i;
+    pa=v*i;
+    pb=i*i*r;
+    cout << "La potencia para la primera formula es " << pa<<endl;
+    cout << "La potencia para la segunda formula es" <<pb<< endl;
+    if(pa == pb )
+    {
+    cout << "hay un error";
+    }
+    if (pa > pb );
+    {
+    I=v/r;
+    cout<<"La intencidad para que la potencia sea la misma la intensidad deber ser " <<I<< endl;
+    }
+    return 0;
+}
