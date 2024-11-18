@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    float f, p;
+    cout << "Ingrese la frecuencia (Hz): ";
+    cin >> f;
+
+    if (f > 0) {
+    p = 1 / f;
+    cout << "El periodo es: " << p << " segundos" << endl;
+    } else {
+    cout << "La frecuencia > 0." << endl;
+    }
+    return 0;
+}
