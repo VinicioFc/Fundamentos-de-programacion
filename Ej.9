@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    float V, I, P,Pm,E;
+
+    cout << "VERIFICAR SI UNA LUZ SE PRENDE" << endl;
+    cout << "Ingrese el voltaje aplicado (V): ";
+    cin >> V;
+    cout << "Ingrese la corriente consumida (A): ";
+    cin >> I;
+    cout << "Ingrese la potencia mínima requerida (W): ";
+    cin >> P;
+
+     Pm = V * I;
+
+    if (Pm >= P)
+    {
+    cout << " Se prende el led " <<endl;
+    }
+    else
+    {
+    cout << " Nose prende el led " << endl;
+    }
+    cout << "Potencia suministrada: " << Pm << " W" << endl;
+    if ( E  == Pm) {
+        cout << "La luz esta ENCENDIDA." << endl;
+    } else {
+        cout << "La luz esta APAGADA." << endl;
+    }
+
+    return 0;
+}
