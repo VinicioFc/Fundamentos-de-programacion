@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float Vf,Vd,R,I,Pd,Pr,Pf;
+    cout << " INGRESE EL VALOR DEL VOLTAJE DE LA FUENTE (Vf)" <<endl;
+    cin  >> Vf;
+    cout << " INGRESE EL VALOR DEL VOLTAJE DEL DIODO (Vd) " <<endl;
+    cin  >> Vd;
+    cout << " INGRESE EL VALOR DE LA RESISTENCIA " <<endl;
+    cin  >> R;
+    if ( Vf > Vd )
+    {
+    I=(Vf-Vd)/ R ;
+    Pr= I*I*R;
+    Pd=I*Vd;
+    Pf=I*Vf;
+    cout << " LA CAIDA DE VOLTAJE ES  "       << I  <<endl;
+    cout << " LA POTENCIA DE RESISTENCIA ES " << Pr <<endl;
+    cout << " LA POTENCIA DEl DIODO ES "      << Pd <<endl;
+    cout << " LA POTENCIA DE LA FUENTE ES  "  << Pf <<endl;
+    }
+    else
+    {
+    cout << " ERROR EL VOLTAJE DEL VD NO CONDUCE POR QUE VF ES MENOR  " << endl;
+    }
+    return 0;
+}
