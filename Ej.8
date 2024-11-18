@@ -1,0 +1,54 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    float V, I, R, P,A;
+
+    cout << "CALCULAR LA POTENCIA DE UN PARLANTE" << endl;
+    cout << "Seleccione la forma de calcular la potencia: " << endl;
+    cout << "1) Con voltaje y corriente" << endl;
+    cout << "2) Con voltaje y resistencia" << endl;
+    cout << "3) Con corriente y resistencia" << endl;
+    cin >> A ;
+
+    if ( A == 1) {
+        cout << "Ingrese el voltaje (V): ";
+        cin >> V;
+        cout << "Ingrese la corriente (A): ";
+        cin >> I;
+        P = V * I;
+        cout << "La potencia del parlante es: " << P << " W" << endl;
+    }
+
+    if ( A == 2) {
+        cout << "Ingrese el voltaje (V): ";
+        cin >> V;
+        cout << "Ingrese la resistencia (Ohm): ";
+        cin >> R;
+        if (R > 0) {
+            P = (V * V) / R;
+            cout << "La potencia del parlante es: " << P << " W" << endl;
+        } else {
+            cout << "Error: La resistencia debe ser mayor a 0." << endl;
+        }
+    }
+
+    if ( A  == 3) {
+        cout << "Ingrese la corriente (A): ";
+        cin >> I;
+        cout << "Ingrese la resistencia (Ohm): ";
+        cin >> R;
+        if (R > 0) {
+            P = (I * I) * R;
+            cout << "La potencia del parlante es: " << P << " W" << endl;
+        } else {
+            cout << "Error: La resistencia debe ser mayor a 0." << endl;
+        }
+    }
+
+    if ( A < 1 ,  A  > 3) {
+        cout << "Opción no válida. Intente de nuevo." << endl;
+    }
+
+    return 0;
+}
