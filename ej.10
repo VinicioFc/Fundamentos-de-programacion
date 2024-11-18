@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    float V, I, Pm, P;
+
+    cout << "VERIFICAR SI UNA LUZ SE QUEMA" << endl;
+    cout << "Ingrese el voltaje aplicado (V): ";
+    cin >> V;
+    cout << "Ingrese la corriente consumida (A): ";
+    cin >> I;
+    cout << "Ingrese la potencia maxima soportada por la luz (W): ";
+    cin >> Pm;
+
+    P = V * I;
+
+    cout << "Potencia suministrada: " << P << " W" << endl;
+    cout << "Potencia maxima soportada: " << Pm << " W" << endl;
+
+    if (P > Pm) {
+        cout << "La luz se ha QUEMADO debido al exceso de potencia." << endl;
+    } else {
+        cout << "La luz está FUNCIONANDO correctamente." << endl;
+    }
+
+    return 0;
+}
