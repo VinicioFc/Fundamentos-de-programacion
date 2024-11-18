@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float Vo,Vs,R1,R2;
+    cout << " INGRESE EL VALOR DEL VOLTAJE INICIAL (Vo)" <<endl;
+    cin  >> Vo;
+    cout << " INGRESE EL VALOR DE LA R1 " <<endl;
+    cin  >> R1;
+    cout << " INGRESE EL VALOR DE LA R2 " <<endl;
+    cin  >> R2;
+    if ( R1+R2 > 0 )
+    {
+    Vs=Vo*(R2/(R1+R2));
+    cout << " EL VALOR DE SALIDA ES " << Vs <<endl;
+    }
+    else
+    {
+    cout << " ERROR INGRESE UN VALOR DE RESISTENCIA CORRECTO " << endl;
+    }
+    return 0;
+}
