@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    float P, V, I, A;
+    cout << " Calcula potencia, voltaje o corriente" << endl;
+    cout << "Ingresa los valores :" << endl;
+    cout << "Potencia (W): ";
+    cin >> P;
+    cout << "Voltaje (V): ";
+    cin >> V;
+    cout << "Corriente (A): ";
+    cin >> I;
+
+    cout << "Selecciona : 1 ) Potencia  2) Voltaje (V)  3) Corriente (I)" << endl;
+    cin >> A;
+
+    if (A == 1) {
+        P = V * I;
+        cout << "La potencia es: " << P << " W" << endl;
+    } else if ( A == 2) {
+        V = P / I;
+        cout << "El voltaje es: " << V << " V" << endl;
+    } else if ( A == 3) {
+        I = P / V;
+        cout << "La corriente es: " << I << " A" << endl;
+    } else {
+        cout << "Opción inválida" << endl;
+    }
+    return 0;
+}
