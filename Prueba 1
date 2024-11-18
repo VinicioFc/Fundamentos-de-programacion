@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float I,R,V,Vfo;
+    V=12;
+    cout << " INGRESE EL VOLTAJE DEL FOCO "    << endl;
+    cin  >> Vfo;
+    cout << " INGRESE LA RESISTENCIA DEL FOCO " << endl;
+    cin  >> R;
+
+    I=(V-Vfo)/R ;
+
+    if (I < 0)
+    {
+    cout << "C.C " << endl;
+    }
+    else if ( I == 0.5 )
+    {
+    cout << " CAMBIAR RESISTENCIA " << endl;
+    }
+    else if ( I > 1 )
+    {
+    cout << " FUNCIONAMIENTO CORRECTO " << endl;
+    }
+
+    return 0;
+}
