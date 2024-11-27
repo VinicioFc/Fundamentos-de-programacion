@@ -1,0 +1,55 @@
+#include <iostream>
+
+using namespace std;
+int main()
+
+{
+    char dia;
+    cout << "INGRESE EL DIA DE LA SEMANA" << endl;
+    cout << "Lunes (1) Martes (2) Miercoles (3) Jueves (4) Viernes (5)" <<endl;
+    cin >> dia ;
+    switch (dia)
+    {
+    case 'Lunes' :
+    cout <<" LUNES "<<endl<<endl;
+
+    cout << " FUNDAMENTOS DE PROGRAMACION "     << endl;
+    cout << " CALCULO DIFERENCIAL E INTEGRAL "  << endl;
+    cout << " QUIMICA "                         << endl;
+    break;
+
+    case 'Martes' :
+    cout << " MARTES "<<endl<<endl;
+
+    cout << " BIOLOGIA "                        << endl;
+    cout << " ALGEBRA LINEAL "                  << endl;
+    cout << " METODOLOFIA DE LA INVESTIGACION " << endl;
+    break;
+
+    case 'MIERCOLES':
+    cout << " MIERCOLES "<<endl<<endl;;
+
+    cout << " FUNDAMENTOS DE PROGRAMACION "     << endl;
+    cout << " CALCULO DIFERENCIAL E INTEGRAL "  << endl;
+    cout << " QUIMICA "                         << endl;
+    break;
+
+    case 'JUEVES':
+    cout <<" JUEVES "<<endl<<endl;
+
+    cout << " BIOLOGIA "                        << endl;
+    cout << " ALGEBRA LINEAL "                  << endl;
+    cout << " METODOLOFIA DE LA INVESTIGACION " << endl;
+    break;
+
+    case 'VIERNES':
+    cout << " VIERNES "<<endl<<endl;
+
+    cout << " FUNDAMENTOS DE PROGRAMACION "     << endl;
+    cout << " CALCULO DIFERENCIAL E INTEGRAL "  << endl;
+    cout << " QUIMICA "                         << endl;
+    break;
+
+    }
+    return 0;
+}
