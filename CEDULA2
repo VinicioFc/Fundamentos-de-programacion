@@ -1,0 +1,41 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    string nombre,apellido,nacionalidad,MES,lugar;
+    float DIA,A;
+
+    cout << "CEDULA DE " << " ºººº " << " REPUBLICA DEL ECUADOR" <<endl;
+    cout << "DIRECCION GENERAL DE REGISTRO CIVIL IDENTIDICACION Y CEDULACION " << endl<<endl;
+
+    nombre= " GITBETH VINICIO ";
+    apellido= " FERNANDEZ CULLQUI ";
+    nacionalidad=" ECUATORIANA ";
+
+    cout << " APELLIDOS " << endl<<endl;
+    cout << apellido << endl<<endl;
+
+    cout << " NOMBRES " << endl<<endl;
+    cout << nombre << endl<<endl;
+
+    cout << " NACIONALIDAD " <<endl<<endl;
+    cout << nacionalidad << endl<<endl;
+
+    cout << "FECHA DE NACIMIENTO " <<endl<<endl;
+
+    DIA=4;
+    A=2003;
+    MES="MAYO" ;
+    cout << DIA  << MES << A << endl<<endl;
+
+    lugar= " TUNGURAHUA  AMBATO PASA ";
+    cout << " LUGAR DE NACIMIENTO " <<endl<<endl;
+    cout << lugar <<endl<<endl;
+
+    cout <<" FIRMA DEL TITULAR"<<endl<<endl;
+    cout << "ººªVINICIO##ªºº/ ";
+
+    return 0;
+}
