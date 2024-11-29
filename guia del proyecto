@@ -1,0 +1,58 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    // Declaro una variable de tipo char para mi do - while
+    char continuar ;
+    //Inicio de do -while
+do {
+    float p,n,v,vt,vp;
+    cout << "INGRESE EL NUMERO DE MEDICIONES "<<endl;
+    cin  >>n;
+
+    //Ingreso una estructura repetitiva de mi for que inicia en 0 y termina en n ,incrementa en i++ incrementa en 1 cada vuelta
+    for ( int i=0 ; i<n ; i++ )
+    {
+    cout << "INGRESE LOS VOLTAJES " <<"["<< i<<"["<<endl;
+    cin >> v;
+    // Consulto si el rango esta entre 0 y 100
+    if (v >0 & v < 100 )
+    {
+    vt=vt+v;
+    }
+    else
+    {
+    cout << " EL VOLTAJE NO ESTA EN EL RANGO " <<endl;
+    }
+     }
+     vp=vt/n;
+    if (vp < 300 )
+    {
+    cout << " EL VOLTAJE TOTAL ES : " << vt<<endl;
+    cout << " EL PROMEDIO : "         << vp<<endl;
+    cout << " °°°° VOLTAJE BAJO °°°° " <<endl;
+    cout << " -----------------------" <<endl;
+    }
+    else if ( vp >300 & vp > 700 )
+    {
+    cout << " EL VOLTAJE TOTAL ES : " << vt<<endl;
+    cout << " EL PROMEDIO : "         << vp<<endl;
+    cout << " *** VOLTAJE BAJO *** " <<endl;
+    cout << "EL VOLTAJE DEL PROMEDIO ES BAJO " <<endl;
+    cout << " -----------------------" <<endl;
+    }
+    else
+    {
+    cout << " EL VOLTAJE TOTAL ES : " << vt<<endl;
+    cout << " EL PROMEDIO : "         << vp <<endl;
+    cout << " °°°° VOLTAJE BAJO °°°° " <<endl;
+    cout << " VOLTAJE DEMASIADAMENTE ALTO "    <<endl;
+    cout << " -----------------------" <<endl;
+    }
+    cout <<"DESEA CONTINUAR Y O N "<<endl;
+    cin >> continuar;
+   } while ( continuar == 'y' );
+    return 0;
+}
