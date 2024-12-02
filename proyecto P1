@@ -1,0 +1,84 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+
+    float n ; // Para que sea infinito sin preguntar si quiere salir del programa(Y/N)
+
+    float tiempoVerde, tiempoAmarillo, tiempoRojo,tiempoCiclo,tiempoTranscurrido ;
+    int ciclosCompletos,tiempoActual;
+    string EstadoNS,EstadoEO;
+    char continuar;
+
+    cout << " INGRESE EL VALOR DE LOS TIPOS " << endl<<endl;
+    cout << " TIEMPO EN VERDE "<<endl;
+    cin >> tiempoVerde;
+    cout << " TIEMPO EN AMARILLO "<<endl;
+    cin >> tiempoAmarillo;
+    cout << " TIEMPO EN ROJO "<<endl;
+    cin >> tiempoRojo;
+
+    n=0;
+    tiempoTranscurrido = 0;
+    EstadoNS = "ROJO";
+    EstadoEO = "VERDE";
+
+    tiempoTranscurrido = 0 ;//Tiempo acumulado de inicio
+    tiempoCiclo = tiempoVerde + tiempoAmarillo + tiempoRojo;// Duracion total de un ciclo
+
+    if ( tiempoVerde >=0 & tiempoAmarillo >=0 & tiempoRojo >= 0) // Varidar que los valores sea mayores o iguales que 0
+    {
+//--
+    while (n >=0 ) {
+
+        ciclosCompletos = tiempoTranscurrido / tiempoCiclo; // Calcular los ciclos completos
+        tiempoActual = tiempoTranscurrido - (ciclosCompletos * tiempoCiclo); // Calcular el tiempo actual
+
+        // Determinar estado de Norte-Sur del semaforo
+
+        if (tiempoActual < tiempoVerde)
+        {
+            EstadoNS = "VERDE";
+        }
+        else if (tiempoActual < tiempoVerde + tiempoAmarillo)
+        {
+            EstadoNS = "AMARILLO";
+        } else
+        {
+            EstadoNS = "ROJO";
+        }
+
+        // Determinar estado de Este-Oeste sincronizando el lado opuesto al semaforo
+
+        if (EstadoNS == "VERDE" & EstadoNS == "AMARILLO")
+        {
+            EstadoEO = "ROJO";
+        } else {
+            EstadoEO = "VERDE";
+        }
+
+        // Mostrar estados actuales de los coleres del semaforo
+        cout << "--------------------------------" << endl;
+        cout << "Norte-Sur: " << EstadoNS << endl;
+        cout << "Este-Oeste: " << EstadoEO << endl;
+        cout << "Tiempo transcurrido: " << tiempoTranscurrido << " segundos" << endl;
+
+        // Incrementar tiempo hasta que
+
+        tiempoTranscurrido++; //Timpo transcurrido en cada segundo
+    }
+    }
+    else {
+    cout << " !!! ERROR TODOS LOS TIEMPOS DEBEN SER MAYORES A 0  " << endl;
+    }
+//--
+    return 0;
+}
+//---- Si desea implementar para que el programa pregunte si desea salir o continuar infinitamente añadir
+/*
+do {
+cout << "¿Deseas continuar con la simulación? (Y/N): " <<endl<<endl;
+        cin >> continuar;
+     } while (continuar == 'Y' || continuar == 'y');
+cout <<" GRACIAS POR USAR EL SISTEMA  (^0^)/ " <<endl;
+*/
