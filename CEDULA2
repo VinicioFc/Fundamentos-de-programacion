@@ -26,7 +26,7 @@ int main()
     cout << "FECHA DE NACIMIENTO " <<endl<<endl;
 
     DIA=4;
-    A=2003;
+    A=2002;
     MES="MAYO" ;
     cout << DIA  << MES << A << endl<<endl;
 
