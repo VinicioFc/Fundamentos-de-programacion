@@ -6,11 +6,11 @@ int main()
 {
     char dia;
     cout << "INGRESE EL DIA DE LA SEMANA" << endl;
-    cout << "Lunes (1) Martes (2) Miercoles (3) Jueves (4) Viernes (5)" <<endl;
+    cout << "Lunes (L) Martes (M) Miercoles (R) Jueves (J) Viernes (V)" <<endl;
     cin >> dia ;
     switch (dia)
     {
-    case 'Lunes' :
+    case 'L' :
     cout <<" LUNES "<<endl<<endl;
 
     cout << " FUNDAMENTOS DE PROGRAMACION "     << endl;
@@ -18,7 +18,7 @@ int main()
     cout << " QUIMICA "                         << endl;
     break;
 
-    case 'Martes' :
+    case 'M' :
     cout << " MARTES "<<endl<<endl;
 
     cout << " BIOLOGIA "                        << endl;
@@ -26,7 +26,7 @@ int main()
     cout << " METODOLOFIA DE LA INVESTIGACION " << endl;
     break;
 
-    case 'MIERCOLES':
+    case 'R':
     cout << " MIERCOLES "<<endl<<endl;;
 
     cout << " FUNDAMENTOS DE PROGRAMACION "     << endl;
@@ -34,7 +34,7 @@ int main()
     cout << " QUIMICA "                         << endl;
     break;
 
-    case 'JUEVES':
+    case 'J':
     cout <<" JUEVES "<<endl<<endl;
 
     cout << " BIOLOGIA "                        << endl;
@@ -42,7 +42,7 @@ int main()
     cout << " METODOLOFIA DE LA INVESTIGACION " << endl;
     break;
 
-    case 'VIERNES':
+    case 'V':
     cout << " VIERNES "<<endl<<endl;
 
     cout << " FUNDAMENTOS DE PROGRAMACION "     << endl;
