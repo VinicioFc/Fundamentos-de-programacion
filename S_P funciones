@@ -1,0 +1,50 @@
+#include <iostream>
+
+using namespace std;
+ float suma  (float a , float b ); //INICIACION DE LAS VARIABLES
+ float resta (float a , float b );
+ float multiplicacion ( float a , float b );
+ float division ( float a , float b );
+
+int main()
+{
+    float x,y,resultado_suma,resultado_resta,resultado_multiplicacion,resultado_division;
+    cout << "Ingres valor de X "<< endl;
+    cin >> x;
+    cout << "Ingres valor de Y "<< endl;
+    cin >> y;
+
+    resultado_suma = suma ( x , y );
+    resultado_resta= resta( x , y );
+    resultado_multiplicacion = multiplicacion( x , y );
+    resultado_division = division( x , y );
+
+
+    cout <<" EL RESULTADO DE LA SUMA ES  " << resultado_suma <<endl;
+    cout <<" EL RESULTADO DE LA RESTA ES  " << resultado_resta <<endl;
+    cout <<" EL RESULTADO DE LA MULTIPLICACION  ES  " << resultado_multiplicacion <<endl;
+    cout <<" EL RESULTADO DE LA DIVISION  ES  " << resultado_division <<endl;
+    return 0;
+}
+   float suma (float a , float b )
+{
+   float suma = a+b;
+   return suma;
+}
+   float resta (float a , float b ) // A Y B SON VARIABLES LOCALES  LE PUEDO USAR EN LAS DIFERENTES FUNCIONES
+{
+   float resta = a-b;
+   return resta;
+}
+   float multiplicacion ( float a , float b )
+{
+   float multiplicacion = a*b;
+   return multiplicacion;
+}
+   float division ( float a , float b )
+{
+   float  division = a / b;
+   return division;
+}
+
+// cambia r a a y b
